@@ -73,3 +73,37 @@ body {
             background: #e03f3f;
             grid-area: sidebar;
             }
+
+            @media (max-width: 500px){
+                .grid-1 {
+                    grid-template-areas: 
+                        "header header header"
+                        "main main main"
+                        "main main main"
+                        "sidebar sidebar sidebar"
+                        "footer footer footer";
+                }
+                .item-2 {
+                    grid-template-areas: 
+                        "content1 content1"
+                        "content2 content2"
+                        "content3 content3";
+                }
+                .item-5 {
+                    grid-area: content1;
+                }
+                .item-6 {
+                    grid-area: content2;
+                }
+                .item-7 {
+                    grid-area: content3;
+                }
+                .item-3 {
+                    grid-area: sidebar;
+                }
+                .item-4 {
+                    grid-area: footer;
+                }
+
+
+            }
